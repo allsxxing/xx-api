@@ -23,13 +23,14 @@ if (!API_ENDPOINT) {
 
 console.log('API Configuration loaded successfully!');
 console.log('API Endpoint:', API_ENDPOINT);
-console.log('API Key:', API_KEY ? '***' + API_KEY.slice(-4) : 'Not set');
+console.log('API Key: ***');
 
 // TODO: Implement your API functionality below
-// Example placeholder function
+// Example placeholder function (async for when you add actual API calls with await)
 async function makeApiRequest() {
   try {
-    // TODO: Replace with actual API request logic
+    // TODO: Replace with actual API request logic using fetch() or axios
+    // Example: const response = await fetch(API_ENDPOINT, { headers: { 'Authorization': `Bearer ${API_KEY}` } });
     console.log('\nReady to make API requests...');
     console.log('Use fetch() or axios to make HTTP requests to:', API_ENDPOINT);
   } catch (error) {
